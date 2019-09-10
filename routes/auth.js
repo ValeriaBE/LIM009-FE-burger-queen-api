@@ -24,6 +24,10 @@ module.exports = (app, nextMain) => {
     }
 
     // TODO: autenticar a la usuarix
+    jwt.sign({ email }, secret, (err, token) => {
+      resp.json({ token });
+      return next(200);
+    });
   });
 
   return nextMain();

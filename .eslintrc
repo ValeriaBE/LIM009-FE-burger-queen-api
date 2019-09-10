@@ -12,8 +12,10 @@
     "no-shadow": "off",
     "no-nested-ternary": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": ["e2e/**/*.js", "**/*.spec.js"]}],
-    "no-console": ["error", {
+    "no-console": ["off", {
       "allow": ["info", "warn", "error"]
-    }]
+    }],
+    "no-path-concat":"off",
+    "prefer-template": "off"
   }
 }
